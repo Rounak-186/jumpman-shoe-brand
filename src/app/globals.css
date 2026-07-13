@@ -3,20 +3,69 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --primary: #c8102e;
+  --primary-hover: #a00e26;
+
+  --navbar-bg: #0d0d0d;
+  --navbar-link: rgba(255, 255, 255, 0.65);
+  --navbar-link-active: #c8102e;
+  --navbar-icon: rgba(255, 255, 255, 0.75);
+  --navbar-logo-text: #ffffff;
+  --navbar-avatar-bg: #3a3a5c;
+
+  --hero-label: rgba(255, 255, 255, 0.85);
+  --hero-body: rgba(255, 255, 255, 0.5);
+  --hero-price: #c8102e;
+  --hero-product-name: #ffffff;
+  --hero-btn-solid-bg: #ffffff;
+  --hero-btn-solid-text: #000000;
+  --hero-btn-ghost-border: rgba(255, 255, 255, 0.65);
+  --hero-btn-ghost-text: #ffffff;
+  --hero-dot-active: #ffffff;
+  --hero-dot-inactive: rgba(255, 255, 255, 0.3);
+  --hero-exclusive-bg: #c8102e;
+
+  --footer-bg: #eaecf8;
+  --footer-heading: #111111;
+  --footer-link: #444444;
+  --footer-link-hover: #111111;
+  --footer-tagline: #666666;
+  --footer-divider: #ccccda;
+  --footer-copyright: #777777;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-navbar-bg: var(--navbar-bg);
+  --color-navbar-link: var(--navbar-link);
+  --color-navbar-link-active: var(--navbar-link-active);
+  --color-navbar-icon: var(--navbar-icon);
+  --color-navbar-logo-text: var(--navbar-logo-text);
+  --color-navbar-avatar-bg: var(--navbar-avatar-bg);
+  --color-hero-label: var(--hero-label);
+  --color-hero-body: var(--hero-body);
+  --color-hero-price: var(--hero-price);
+  --color-hero-product-name: var(--hero-product-name);
+  --color-hero-btn-solid-bg: var(--hero-btn-solid-bg);
+  --color-hero-btn-solid-text: var(--hero-btn-solid-text);
+  --color-hero-btn-ghost-border: var(--hero-btn-ghost-border);
+  --color-hero-btn-ghost-text: var(--hero-btn-ghost-text);
+  --color-hero-dot-active: var(--hero-dot-active);
+  --color-hero-dot-inactive: var(--hero-dot-inactive);
+  --color-hero-exclusive-bg: var(--hero-exclusive-bg);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-heading: var(--footer-heading);
+  --color-footer-link: var(--footer-link);
+  --color-footer-link-hover: var(--footer-link-hover);
+  --color-footer-tagline: var(--footer-tagline);
+  --color-footer-divider: var(--footer-divider);
+  --color-footer-copyright: var(--footer-copyright);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
