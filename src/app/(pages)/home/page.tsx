@@ -1,10 +1,13 @@
 import React from "react";
+import HeroSection from "@/components/modules/hero/HeroSection";
+import BrandProductSection from "@/components/modules/brand-product/BrandProductSection";
+import Footer from "@/components/modules/footer/Footer";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans ">
-        wecome to home page
-    </div> 
+    <>
+      welcome to home page!!
+    </>
   );
 };
 

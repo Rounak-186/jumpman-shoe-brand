@@ -33,6 +33,24 @@
   --footer-tagline: #666666;
   --footer-divider: #ccccda;
   --footer-copyright: #777777;
+
+  /* Brand & Product Section */
+  --brand-section-bg: #ffffff;
+  --brand-section-heading: #111111;
+  --brand-section-subtext: #555555;
+  --brand-section-accent: #c8102e;
+  --brand-card-bg: #ffffff;
+  --brand-card-border: #e8e8e8;
+  --brand-card-shadow: rgba(0, 0, 0, 0.06);
+  --brand-card-name: #111111;
+  --brand-card-price: #111111;
+  --brand-card-arrow-bg: #111111;
+  --brand-card-arrow-icon: #ffffff;
+  --brand-ctrl-bg: #f0f0f0;
+  --brand-ctrl-hover: #e0e0e0;
+  --brand-ctrl-icon: #111111;
+  --brand-dot-active: #c8102e;
+  --brand-dot-inactive: #cccccc;
 }
 
 @theme inline {
@@ -66,10 +84,43 @@
   --color-footer-copyright: var(--footer-copyright);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Brand & Product Section tokens */
+  --color-brand-section-bg: var(--brand-section-bg);
+  --color-brand-section-heading: var(--brand-section-heading);
+  --color-brand-section-subtext: var(--brand-section-subtext);
+  --color-brand-section-accent: var(--brand-section-accent);
+  --color-brand-card-bg: var(--brand-card-bg);
+  --color-brand-card-border: var(--brand-card-border);
+  --color-brand-card-shadow: var(--brand-card-shadow);
+  --color-brand-card-name: var(--brand-card-name);
+  --color-brand-card-price: var(--brand-card-price);
+  --color-brand-card-arrow-bg: var(--brand-card-arrow-bg);
+  --color-brand-card-arrow-icon: var(--brand-card-arrow-icon);
+  --color-brand-ctrl-bg: var(--brand-ctrl-bg);
+  --color-brand-ctrl-hover: var(--brand-ctrl-hover);
+  --color-brand-ctrl-icon: var(--brand-ctrl-icon);
+  --color-brand-dot-active: var(--brand-dot-active);
+  --color-brand-dot-inactive: var(--brand-dot-inactive);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.brand-marquee {
+  display: flex;
+  animation: marquee-scroll 22s linear infinite;
+  width: max-content;
+}
+
+.brand-marquee:hover {
+  animation-play-state: paused;
 }
