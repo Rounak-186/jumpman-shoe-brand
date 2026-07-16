@@ -125,7 +125,6 @@ export default function BrandProductSection() {
       className="w-full"
       style={{ backgroundColor: "var(--brand-section-bg)" }}
     >
-      {/* ── Brands strip ────────────────────────────────────────────── */}
       <div className="py-12 border-b border-brand-card-border">
         <div className="max-w-[calc(100vw-300px)] mx-auto px-10">
           <h2

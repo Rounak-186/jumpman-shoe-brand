@@ -37,7 +37,7 @@ export default function CategoriesSection() {
             <Link
               key={category.name}
               href={category.href}
-              className="group relative block overflow-hidden rounded-2xl aspect-[4/3] w-full"
+              className="group relative block overflow-hidden rounded-2xl aspect-4/3 w-full"
             >
               {/* Image with zoom effect */}
               <div className="relative w-full h-full transform transition-transform duration-500 group-hover:scale-105">
