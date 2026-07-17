@@ -17,7 +17,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full sticky top-0 z-50 bg-navbar-bg">
+    <header className="w-full fixed top-0 z-50 bg-navbar-bg">
       <nav className="w-full px-8 h-16 flex items-center justify-between">
 
         <Link href="/" id="navbar-logo" aria-label="Jordan home" className="flex flex-col items-center gap-0.5">

@@ -22,7 +22,7 @@ export default function HeroSection() {
         fill
         className="object-cover object-center"
         priority
-        sizes="100vw"
+        sizes="95vw"
       />
 
       <div className="absolute bottom-40 left-10 right-10 z-10 flex flex-col justify-end px-14 ">

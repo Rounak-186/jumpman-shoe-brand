@@ -51,6 +51,15 @@
   --brand-ctrl-icon: #111111;
   --brand-dot-active: #c8102e;
   --brand-dot-inactive: #cccccc;
+
+  /* Limited Offer Section */
+  --limited-offer-bg: #1c181d;
+  --limited-offer-purple: #7b2cbf;
+
+  /* Testimonials Section */
+  --testimonial-card-bg: #f4f4f6;
+  --testimonial-card-border: #e2e8f0;
+  --testimonial-star-color: #fbbf24;
 }
 
 @theme inline {
@@ -102,6 +111,13 @@
   --color-brand-ctrl-icon: var(--brand-ctrl-icon);
   --color-brand-dot-active: var(--brand-dot-active);
   --color-brand-dot-inactive: var(--brand-dot-inactive);
+
+  /* Limited Offer & Testimonials Section tokens */
+  --color-limited-offer-bg: var(--limited-offer-bg);
+  --color-limited-offer-purple: var(--limited-offer-purple);
+  --color-testimonial-card-bg: var(--testimonial-card-bg);
+  --color-testimonial-card-border: var(--testimonial-card-border);
+  --color-testimonial-star-color: var(--testimonial-star-color);
 }
 
 body {
@@ -124,3 +140,15 @@ body {
 .brand-marquee:hover {
   animation-play-state: paused;
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(-22deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-20deg);
+  }
+}
+
+
+
