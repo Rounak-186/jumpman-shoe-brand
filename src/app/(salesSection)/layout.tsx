@@ -1,0 +1,11 @@
+import BrandBannerSlider from "@/components/ui/Banners";
+import React from "react";
+
+export default function layout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex flex-col w-full h-full min-h-screen">
+      <BrandBannerSlider />
+      {children}
+    </div>
+  );
+}
